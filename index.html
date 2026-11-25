@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ledger</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<main>
+  <header><h1>Ledger</h1><input id="month" type="month" aria-label="Month"></header>
+  <section class="hero">
+    <small>Spent this month (EGP)</small>
+    <div id="spent">0.00</div>
+    <div id="meter" class="none"><i></i></div>
+    <p id="status"></p>
+    <label>Monthly budget <input id="budget" inputmode="decimal" placeholder="e.g. 2000"></label>
+    <p class="avg">Average <b id="avg"></b></p>
+  </section>
+  <section><h2>By category</h2><ul id="cats" class="cats"></ul></section>
+  <section>
+    <h2>Add expense</h2>
+    <form id="add">
+      <input id="amount" inputmode="decimal" placeholder="Amount" required>
+      <select id="cat"></select>
+      <input id="note" placeholder="Note (optional)" maxlength="60">
+      <input id="date" type="date" required>
+      <button>Add</button>
+    </form>
+    <p id="err" class="err"></p>
+  </section>
+  <section><h2>Expenses</h2><ul id="list" class="list"></ul></section>
+</main>
+<script type="module" src="app.js"></script>
+</body></html>
