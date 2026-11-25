@@ -39,3 +39,4 @@ form button:hover{filter:brightness(1.06)}
 .syncbar{display:flex;flex-wrap:wrap;align-items:center;gap:6px 12px;margin:2px 0 0;font-size:.82rem;color:var(--mute)}.syncbar p{margin:0}
 .auth{display:flex;align-items:center;gap:8px}.auth button{font:inherit;font-size:.85rem;padding:0 14px;min-height:40px;border-radius:999px;border:1px solid var(--line);background:var(--card);color:var(--ink);cursor:pointer}.auth button:hover{border-color:var(--gold)}.auth .who{color:var(--ink)}
 .offnote{flex-basis:100%;font-size:.78rem;color:var(--mute,#6b7280);line-height:1.4}
+[data-a]{white-space:nowrap;flex:none}
