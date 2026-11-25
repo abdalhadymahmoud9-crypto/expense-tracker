@@ -23,7 +23,7 @@ ul{list-style:none;margin:0;padding:0}
 .cats i{height:6px;background:var(--bg2);border-radius:3px;position:relative;overflow:hidden}
 .cats i::after{content:"";position:absolute;inset:0;width:var(--w);background:var(--gold);border-radius:3px}
 .cats em{font-style:normal;text-align:right;color:var(--mute);font-variant-numeric:tabular-nums}
-form{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+form{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:10px}form input,form select{min-width:0;width:100%}
 form #note{grid-column:span 2}
 form button{grid-column:span 2;min-height:48px;border:0;border-radius:12px;background:var(--gold);color:#2a2008;font:650 .98rem inherit;font-family:inherit;cursor:pointer}
 form button:hover{filter:brightness(1.06)}
